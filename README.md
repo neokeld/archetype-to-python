@@ -7,11 +7,12 @@ In November 2021, looking at the Archetype language, which is a contract program
 ## Project organisation
 
 * Dockerfile: You can build and run this project with docker
-* src/archetype-parser.py: The entrypoint
+* src/archetype-parser.py: The entrypoint of the generator
+* test/main.py: The entrypoint of the tests of the generated code
 
 ## Run it
 
-To interpret some code using docker:
+To generate some Python code using docker:
 
 ```
 docker build -t archetype-parser . && docker run archetype-parser
